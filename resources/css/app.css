@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #E5E7EB; /* 2 */
+}
+
+html {
+    line-height: 1.5; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -moz-tab-size: 4; /* 3 */
+    -o-tab-size: 4;
+        tab-size: 4; /* 3 */
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; /* 4 */
+}
+
+.ql-editor {
+    min-height: 300px;
+    font-size: 18px;
+}
+
+.ql-formats button {
+    position: relative;
+}
+
+.ql-toolbar .ql-formats:last-child {
+    float: right;
+    padding-right: 30px;
+    margin-right: 10px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all .1s;
+}
+
+.ql-toolbar .ql-formats:last-child:hover {
+    color: #06c;
+    border-color: #06c;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+.bg-opacity-50 {
+    opacity: 0.5;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+fieldset:disabled * {
+    cursor: no-drop !important;
+    opacity: 0.8;
+}
