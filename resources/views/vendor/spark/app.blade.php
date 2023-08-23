@@ -75,7 +75,5 @@
         {!! file_get_contents($jsPath) !!}
     </script>
 
-    <x-impersonate::banner/>
-
 </body>
 </html>

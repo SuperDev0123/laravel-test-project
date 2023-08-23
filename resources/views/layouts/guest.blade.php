@@ -27,7 +27,5 @@
 
         @yield('scripts')
 
-        <x-impersonate::banner/>
-
     </body>
 </html>
